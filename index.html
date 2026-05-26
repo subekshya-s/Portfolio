@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subekshya Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">SS</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h2 class="hero-name">Subekshya Subedi</h2>
+      <p class="hero">Geomatics Engineer|Backend Developer.</p>
+      <a href="#projects" class="btn-primary fade-in">View My Work</a>
+    </div>
+    <div class="hero-image floating">
+      <img src="images/your-photo.jpg" alt="Subekshya Portrait">
+      <div class="social-links fade-in">
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">
+          <img src="images/linkin.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://github.com/YOUR-GITHUB" target="_blank">
+          <img src="images/github.png" alt="GitHub Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <canvas id="heroParticles"></canvas>
+</section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">I combine geospatial analysis with backend development to build practical and scalable spatial solutions. My stack includes Python (GeoPandas, Rasterio, NumPy), Django, ArcGIS, QGIS, and Google Earth Engine. I focus on turning spatial workflows into automated, deployable applications that make geospatial data more useful.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="geo-map">
+        <svg class="geo-grid-bg" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="smallgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+              <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#3AAFA9" stroke-width="0.3"/>
+            </pattern>
+            <pattern id="biggrid" width="120" height="120" patternUnits="userSpaceOnUse">
+              <rect width="120" height="120" fill="url(#smallgrid)"/>
+              <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#3AAFA9" stroke-width="0.6"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#biggrid)" opacity="0.08"/>
+          <line x1="10%" y1="0" x2="60%" y2="100%" stroke="#3AAFA9" stroke-width="0.4" stroke-dasharray="5,10" opacity="0.12"/>
+          <line x1="50%" y1="0" x2="95%" y2="100%" stroke="#3AAFA9" stroke-width="0.4" stroke-dasharray="5,10" opacity="0.12"/>
+          <circle cx="25%" cy="30%" r="60" fill="none" stroke="#3AAFA9" stroke-width="0.5" opacity="0.1"/>
+          <circle cx="75%" cy="65%" r="80" fill="none" stroke="#3AAFA9" stroke-width="0.5" opacity="0.1"/>
+        </svg>
+
+        <div class="geo-route">
+
+          <!-- Stop 1 -->
+          <div class="geo-stop">
+            <div class="geo-spine">
+              <div class="geo-pin geo-pin--done">&#9679;</div>
+              <div class="geo-line geo-line--filled"></div>
+            </div>
+            <div class="geo-card">
+              <span class="geo-badge geo-badge--done">Completed</span>
+              <h3 class="geo-org">Pasal.com <span class="geo-role">Map Integration Intern</span></h3>
+              <p class="geo-coord">28.2096° N, 83.9856° E &nbsp;·&nbsp; Pokhara, Nepal</p>
+              <ul class="geo-bullets">
+                <li>Developed geospatial features: routing, geocoding, and spatial analysis tools.</li>
+                <li>Created interactive web maps with route paths and elevation info.</li>
+                <li>Designed custom polygon-based maps for chowk and tole areas.</li>
+                <li>Frontend mapping with Leaflet · server deployment with Docker.</li>
+              </ul>
+              <p class="geo-date">&#128337; Jan 2025 – Mar 2025 &nbsp;·&nbsp; 3 months</p>
+            </div>
+          </div>
+
+          <!-- Stop 2 -->
+          <div class="geo-stop">
+            <div class="geo-spine">
+              <div class="geo-pin geo-pin--done">&#9679;</div>
+              <div class="geo-line geo-line--filled"></div>
+            </div>
+            <div class="geo-card">
+              <span class="geo-badge geo-badge--done">Completed</span>
+              <h3 class="geo-org">Naxa <span class="geo-role">Backend Trainee</span></h3>
+              <p class="geo-coord">27.7172° N, 85.3240° E &nbsp;·&nbsp; Kathmandu, Nepal</p>
+              <ul class="geo-bullets">
+                <li>Developed and maintained backend services for GIS and WebGIS applications.</li>
+                <li>Worked with GeoJSON datasets in relational and spatial databases.</li>
+                <li>Implemented house number generation logic for large-scale datasets.</li>
+                <li>Debugged backend issues to improve API performance.</li>
+              </ul>
+              <p class="geo-date">&#128337; Jun 2025 – Dec 2025 &nbsp;·&nbsp; 6 months</p>
+            </div>
+          </div>
+
+          <!-- Stop 3 — current -->
+          <div class="geo-stop">
+            <div class="geo-spine">
+              <div class="geo-pin geo-pin--current">&#9650;</div>
+            </div>
+            <div class="geo-card geo-card--current">
+              <span class="geo-badge geo-badge--current">&#9679; Live — Ongoing</span>
+              <h3 class="geo-org">Code Rush <span class="geo-role">Fellow — Fellowship Program</span></h3>
+              <p class="geo-coord">27.7172° N, 85.3240° E &nbsp;·&nbsp; Remote</p>
+              <ul class="geo-bullets">
+                <li>Selected fellow in the competitive Code Rush Fellowship Program.</li>
+                <li>Building and shipping projects under mentorship with clean code practices.</li>
+                <li>Collaborating on open-source and product-focused challenges.</li>
+                <li>Developing skills in system design, code review, and agile workflows.</li>
+              </ul>
+              <p class="geo-date">&#128337; Feb 2026 – Present &nbsp;·&nbsp; Ongoing</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>Smart Study Planner</h3>
+          <div class="project-tags">
+            <span class="tag">Django</span>
+            <span class="tag">React</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <p>An intelligent study planning web application that helps students organize their schedules, track progress, and optimize learning sessions using a full-stack Django + React architecture backed by PostgreSQL.</p>
+          <a href="#" class="btn-secondary">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>GeoJSON to Image Attacher</h3>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyPI</span>
+            <span class="tag">GeoJSON</span>
+          </div>
+          <p>A Python package published on PyPI that converts GeoJSON geometries into rendered map images and attaches them seamlessly to documents or pipelines — making spatial data instantly visual without heavy GIS tooling.</p>
+          <a href="https://pypi.org/project/geojson-image-attacher/" target="_blank" class="btn-secondary">View on PyPI</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Urban Heat Island Analysis</h3>
+          <div class="project-tags">
+            <span class="tag">Remote Sensing</span>
+            <span class="tag">Google Earth Engine</span>
+            <span class="tag">Python</span>
+          </div>
+          <p>Final year project mapping and analyzing Urban Heat Island (UHI) effects using satellite imagery, land surface temperature data, and geospatial tools to identify heat-vulnerable zones and inform urban planning decisions.</p>
+          <a href="#" class="btn-secondary">View Project</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Subekshya &nbsp;·&nbsp; 27.7172° N, 85.3240° E &nbsp;·&nbsp; All Rights Reserved.</p>
+  </footer>
+
+  <script src="interactive.js"></script>
+</body>
+</html>
