@@ -1,0 +1,136 @@
+/* ── SKILLS ── */
+#Skills {
+  background: #0e1a1a;
+  padding: 100px 0;
+}
+
+.skills-map {
+  position: relative;
+  width: 100%;
+  padding: 20px 0 30px;
+}
+
+/* same geo grid background as experience */
+.skills-grid-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.skills-zones {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* last box alone on its row — center it */
+.skill-zone:last-child {
+  grid-column: 2 / 3;
+}
+
+@media (max-width: 900px) {
+  .skills-zones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-zone:last-child {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* each box = a "zone" on the map */
+.skill-zone {
+  background: #0a1f1f;
+  border: 1px solid #1d4040;
+  border-radius: 14px;
+  padding: 22px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.skill-zone:hover {
+  transform: translateY(-6px);
+  border-color: #3AAFA9;
+  box-shadow: 0 8px 30px rgba(58,175,169,0.15);
+}
+
+/* top-left zone coordinate label */
+.zone-coord {
+  font-size: 0.72rem;
+  color: #3AAFA9;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.skill-zone-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #1d4040;
+}
+
+/* coloured zone marker — like a map pin marker */
+.zone-marker {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  border: 2px solid #0e1a1a;
+}
+
+.zone-marker--teal    { background: #3AAFA9; box-shadow: 0 0 0 3px rgba(58,175,169,0.2); }
+.zone-marker--yellow  { background: #FFD166; box-shadow: 0 0 0 3px rgba(255,209,102,0.2); }
+.zone-marker--blue    { background: #4A9ECD; box-shadow: 0 0 0 3px rgba(74,158,205,0.2); }
+.zone-marker--green   { background: #57CC99; box-shadow: 0 0 0 3px rgba(87,204,153,0.2); }
+
+.skill-zone-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #6FFFE9;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #051212;
+  color: #3AAFA9;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  border: 1px solid #0F6E56;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: #3AAFA9;
+  color: #051212;
+  border-color: #3AAFA9;
+}
