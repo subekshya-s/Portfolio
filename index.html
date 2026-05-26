@@ -4,59 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subekshya Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- ── Fonts ── -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ── Styles — edit each file separately ── -->
+  <link rel="stylesheet" href="css/base.css">       <!-- global resets & shared buttons -->
+  <link rel="stylesheet" href="css/nav.css">        <!-- header & navigation            -->
+  <link rel="stylesheet" href="css/hero.css">       <!-- hero section                   -->
+  <link rel="stylesheet" href="css/about.css">      <!-- about section                  -->
+  <link rel="stylesheet" href="css/experience.css"> <!-- experience / geo route         -->
+  <link rel="stylesheet" href="css/projects.css">   <!-- project cards                  -->
+  <link rel="stylesheet" href="css/contact.css">    <!-- contact form & footer          -->
 </head>
 <body>
+
+  <!-- ════════════════════════════════════
+       SECTIONS — edit each file separately
+       sections/nav.html
+       sections/hero.html
+       sections/about.html
+       sections/experience.html
+       sections/projects.html
+       sections/contact.html
+  ════════════════════════════════════ -->
+
+  <!-- NAV -->
   <header>
     <div class="container header-container">
       <h1 class="logo">SS</h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#Skills">Skills</a></li>
-          <li><a href="#projects">projects</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="container hero-content">
-    <div class="hero-text">
-      <h2 class="hero-name">Subekshya Subedi</h2>
-      <p class="hero">Geomatics Engineer|Backend Developer.</p>
-      <a href="#projects" class="btn-primary fade-in">View My Work</a>
-    </div>
-    <div class="hero-image floating">
-      <img src="images/your-photo.jpg" alt="Subekshya Portrait">
-      <div class="social-links fade-in">
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">
-          <img src="images/linkin.png" alt="LinkedIn Logo">
-        </a>
-        <a href="https://github.com/YOUR-GITHUB" target="_blank">
-          <img src="images/github.png" alt="GitHub Logo">
-        </a>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2 class="hero-name">Subekshya Subedi</h2>
+        <p class="hero">Geomatics Engineer | Backend Developer.</p>
+        <a href="#projects" class="btn-primary fade-in">View My Work</a>
+      </div>
+      <div class="hero-image floating">
+        <img src="images/your-photo.jpg" alt="Subekshya Portrait">
+        <div class="social-links fade-in">
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">
+            <img src="images/linkin.png" alt="LinkedIn Logo">
+          </a>
+          <a href="https://github.com/YOUR-GITHUB" target="_blank">
+            <img src="images/github.png" alt="GitHub Logo">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <canvas id="heroParticles"></canvas>
-</section>
+    <canvas id="heroParticles"></canvas>
+  </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <h2 class="section-title">About Me</h2>
-      <p class="about-text">I combine geospatial analysis with backend development to build practical and scalable spatial solutions. My stack includes Python (GeoPandas, Rasterio, NumPy), Django, ArcGIS, QGIS, and Google Earth Engine. I focus on turning spatial workflows into automated, deployable applications that make geospatial data more useful.</p>
+      <p class="about-text">
+        I combine geospatial analysis with backend development to build practical and scalable spatial solutions.
+        My stack includes Python (GeoPandas, Rasterio, NumPy), Django, ArcGIS, QGIS, and Google Earth Engine.
+        I focus on turning spatial workflows into automated, deployable applications that make geospatial data more useful.
+      </p>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="container">
       <h2 class="section-title">Experience</h2>
-
       <div class="geo-map">
         <svg class="geo-grid-bg" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -74,7 +102,6 @@
           <circle cx="25%" cy="30%" r="60" fill="none" stroke="#3AAFA9" stroke-width="0.5" opacity="0.1"/>
           <circle cx="75%" cy="65%" r="80" fill="none" stroke="#3AAFA9" stroke-width="0.5" opacity="0.1"/>
         </svg>
-
         <div class="geo-route">
 
           <!-- Stop 1 -->
@@ -141,6 +168,7 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
       <h2 class="section-title">Projects</h2>
@@ -153,7 +181,9 @@
             <span class="tag">React</span>
             <span class="tag">PostgreSQL</span>
           </div>
-          <p>An intelligent study planning web application that helps students organize their schedules, track progress, and optimize learning sessions using a full-stack Django + React architecture backed by PostgreSQL.</p>
+          <p>An intelligent study planning web application that helps students organize their schedules,
+             track progress, and optimize learning sessions using a full-stack Django + React architecture
+             backed by PostgreSQL.</p>
           <a href="#" class="btn-secondary">View Project</a>
         </div>
 
@@ -164,7 +194,9 @@
             <span class="tag">PyPI</span>
             <span class="tag">GeoJSON</span>
           </div>
-          <p>A Python package published on PyPI that converts GeoJSON geometries into rendered map images and attaches them seamlessly to documents or pipelines — making spatial data instantly visual without heavy GIS tooling.</p>
+          <p>A Python package published on PyPI that converts GeoJSON geometries into rendered map images
+             and attaches them seamlessly to documents or pipelines — making spatial data instantly visual
+             without heavy GIS tooling.</p>
           <a href="https://pypi.org/project/geojson-image-attacher/" target="_blank" class="btn-secondary">View on PyPI</a>
         </div>
 
@@ -175,7 +207,9 @@
             <span class="tag">Google Earth Engine</span>
             <span class="tag">Python</span>
           </div>
-          <p>Final year project mapping and analyzing Urban Heat Island (UHI) effects using satellite imagery, land surface temperature data, and geospatial tools to identify heat-vulnerable zones and inform urban planning decisions.</p>
+          <p>Final year project mapping and analyzing Urban Heat Island (UHI) effects using satellite imagery,
+             land surface temperature data, and geospatial tools to identify heat-vulnerable zones and inform
+             urban planning decisions.</p>
           <a href="#" class="btn-secondary">View Project</a>
         </div>
 
@@ -183,6 +217,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact Me</h2>
@@ -195,10 +230,15 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2026 Subekshya &nbsp;·&nbsp; 27.7172° N, 85.3240° E &nbsp;·&nbsp; All Rights Reserved.</p>
   </footer>
 
-  <script src="interactive.js"></script>
+  <!-- ── Scripts — edit each file separately ── -->
+  <script src="js/particles.js"></script>   <!-- Hero canvas particles     -->
+  <script src="js/timeline.js"></script>    <!-- Experience scroll reveal   -->
+  <script src="js/contact.js"></script>     <!-- Contact form submission    -->
+
 </body>
 </html>

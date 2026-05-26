@@ -1,0 +1,45 @@
+/* ── NAV ── */
+header {
+  background: rgba(0, 5, 10, 0.9);
+  padding: 10px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  backdrop-filter: blur(9px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #6FFFE9;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f7f4f4;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #1a3a3a;
+  color: #6FFFE9;
+}

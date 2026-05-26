@@ -1,0 +1,64 @@
+/* ── CONTACT ── */
+#contact {
+  background: #0e1a1a;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #1d4040;
+  background: #091515;
+  color: #f0e9e9;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #3AAFA9;
+  box-shadow: 0 0 10px rgba(58,175,169,0.2);
+}
+
+form button {
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 2px solid #6FFFE9;
+  background: #3AAFA9;
+  color: #051212;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #6FFFE9;
+  transform: translateY(-2px);
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  background: #060f0f;
+  color: #3AAFA9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}

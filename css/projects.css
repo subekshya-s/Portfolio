@@ -1,0 +1,64 @@
+/* ── PROJECTS ── */
+#projects {
+  background: #0a0a0a;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.project-card {
+  background: #0a1f1f;
+  border: 1px solid #1d4040;
+  padding: 25px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #3AAFA9;
+  box-shadow: 0 8px 30px rgba(58,175,169,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 12px;
+  color: #6FFFE9;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.project-card p {
+  margin-bottom: 18px;
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  background: #051212;
+  color: #3AAFA9;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  border: 1px solid #0F6E56;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
